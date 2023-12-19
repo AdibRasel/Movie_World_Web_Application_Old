@@ -1,4 +1,4 @@
-const UserRegister = async (Request, DataModel) => {
+const Register = async (Request, DataModel) => {
     try {
         let PostBody = Request.body;
 
@@ -11,7 +11,7 @@ const UserRegister = async (Request, DataModel) => {
 
     }
     catch (error) {
-        return { status: "fail Test", data: error }
+        return { status: "fail", data: error }
     }
 }
-module.exports = UserRegister
+module.exports = Register
