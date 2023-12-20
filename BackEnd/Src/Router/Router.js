@@ -33,8 +33,14 @@ Router.post("/UserLogin", UserController.UserLogin);
 // Menu Create 
 Router.post("/MenuCreate", MenuController.MenuCreate)
 
+
+
 // DashBoard Create
 Router.post("/DashBoardCreate", DashBoardController.DashBoardCreate)
+// DashBoard Details
+Router.get("/DashBoardDetails", DashBoardController.DashBoardDetails)
+
+
 
 // Trailer Create
 Router.post("/TrailerCreate", TrailerController.TrailerCreate)
