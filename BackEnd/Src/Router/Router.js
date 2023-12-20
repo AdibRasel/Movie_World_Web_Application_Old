@@ -32,6 +32,8 @@ Router.post("/UserLogin", UserController.UserLogin);
 
 // Menu Create 
 Router.post("/MenuCreate", MenuController.MenuCreate)
+// Header Details 
+Router.get("/HeaderDetails", MenuController.HeaderDetails)
 
 
 
