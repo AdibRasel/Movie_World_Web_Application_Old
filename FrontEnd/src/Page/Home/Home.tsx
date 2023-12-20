@@ -3,7 +3,8 @@ const Home = () => {
     return (<>
 
         <h1>
-            this is home page
+            
+            This is home page 
 
         </h1>
 

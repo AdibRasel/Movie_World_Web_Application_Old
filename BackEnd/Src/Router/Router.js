@@ -2,6 +2,8 @@ const express =require('express');
 const SuperAdminController = require('../controller/SuperAdminController/SuperAdminController');
 const OfficeController = require('../controller/OfficeController/OfficeController');
 const UserController = require('../controller/UserController/UserController');
+const MenuController = require("../Controller/MenuController/MenuController");
+const DashBoardController = require("../Controller/DashBoardController/DashBoardController")
 
 const Router =express.Router();
 
@@ -26,6 +28,12 @@ Router.post("/UserRegister", UserController.UserRegister);
 Router.post("/UserLogin", UserController.UserLogin);
 
 
+
+// Menu Create 
+Router.post("/MenuCreate", MenuController.MenuCreate)
+
+// DashBoard Create
+Router.post("/DashBoardCreate", DashBoardController.DashBoardCreate)
 
 
 module.exports=Router
