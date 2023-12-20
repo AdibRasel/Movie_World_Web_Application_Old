@@ -4,6 +4,7 @@ const OfficeController = require('../controller/OfficeController/OfficeControlle
 const UserController = require('../controller/UserController/UserController');
 const MenuController = require("../Controller/MenuController/MenuController");
 const DashBoardController = require("../Controller/DashBoardController/DashBoardController")
+const TrailerController = require("../Controller/TrailerController/TrailerController")
 
 const Router =express.Router();
 
@@ -34,6 +35,17 @@ Router.post("/MenuCreate", MenuController.MenuCreate)
 
 // DashBoard Create
 Router.post("/DashBoardCreate", DashBoardController.DashBoardCreate)
+
+// Trailer Create
+Router.post("/TrailerCreate", TrailerController.TrailerCreate)
+
+
+
+
+
+
+
+
 
 
 module.exports=Router
